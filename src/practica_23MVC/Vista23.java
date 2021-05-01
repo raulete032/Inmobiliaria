@@ -369,7 +369,7 @@ public class Vista23 extends JPanel {
 		
 		this.listadoPropiedades = new JTextArea(10, 30);
 		this.ocultar = new JButton("Ocultar");
-		this.ordenar = new JButton("Ordenar");
+		this.ordenar = new JButton("Ordenar por precio");
 		listadoPropiedades.setEditable(false);
 		
 		panelBotones.add(ocultar);
@@ -403,6 +403,7 @@ public class Vista23 extends JPanel {
 		limpiar.addActionListener(ctr);
 		listado.addActionListener(ctr);
 		ocultar.addActionListener(ctr);
+		ordenar.addActionListener(ctr);
 		
 		codigo.addFocusListener(ctr);
 		precio.addFocusListener(ctr);

@@ -106,7 +106,7 @@ public class Controlador23 implements FocusListener,
 			listado();
 		}
 		
-		if (arg0.getSource() == this.miVista.getOcultar()) {
+		if (arg0.getSource() == this.miVista.getOcultar()) {//se ha pulsado Ocular
 			
 			ocultar();
 		}
@@ -125,7 +125,11 @@ public class Controlador23 implements FocusListener,
 		}
 		
 		
-		
+		if(arg0.getSource() == this.miVista.getOrdenar()) { //se ha pulsado Ordenar
+			
+			ordena();
+			
+		}
 		
 		
 	}
@@ -502,6 +506,27 @@ public class Controlador23 implements FocusListener,
 		return sw;
 		
 	}
+	
+	
+	
+	private void ordena() {
+		
+		this.miVista.getListadoPropiedades().setText(this.modeloInmo.getPropiedadesOrdenPrecio1());
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
